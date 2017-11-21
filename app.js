@@ -45,10 +45,6 @@ Array.from(b).forEach(function(item){
 })
 
 
-aa = document.getElementById("reset").addEventListener("click", start);
-
-
-
 //(KEYPRESS): COMPLETE
 window.addEventListener("keypress", function(e, code){
     code = e.keyCode;
