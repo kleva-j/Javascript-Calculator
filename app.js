@@ -18,7 +18,7 @@ Things to be done are
 
 
 //Create Global variables
-var a, aa, b, bb, c, cc, d, dd, ee, f, ff, g, h, i, j, code;
+let a, aa, b, bb, c, cc, d, dd, ee, f, ff, g, h, i, j, code;
 
 //variable initialization
 a = document.querySelectorAll(".numbs");
