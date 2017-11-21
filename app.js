@@ -24,7 +24,7 @@ let a, aa, b, bb, c, cc, d, dd, ee, f, ff, g, h, i, j, code;
 a = document.querySelectorAll(".numbs");
 b = document.querySelectorAll(".symbols");
 c = document.getElementById("display-screen");
-d = [48,49,50,51,52,53,54,55,56,57,46,""];
+d = [48,49,50,51,52,53,54,55,56,57,46];
 dd = [0,1,2,3,4,5,6,7,8,9,"."];
 
 
@@ -58,6 +58,9 @@ window.addEventListener("keypress", function(e, code){
 
 });
 
+const get = document.getElementById("reset").addEventListener("click", function(){
+    c.innerText = "";
+})
 
 
 // Filter property of an array
@@ -97,6 +100,6 @@ function fibonachiSequence(m){
     return products;
 };
 
-function
+
 
 
