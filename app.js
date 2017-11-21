@@ -189,7 +189,7 @@ let met = starts.filter(makeSet);
 
 let set = nums.filter(makeSet);
 
-//console.log(set, met);
+console.log(set, met);
 
 
 // FACTORIAL
