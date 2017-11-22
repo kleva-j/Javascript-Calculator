@@ -91,4 +91,22 @@
     border: 1px solid green;
     margin: 3px 2%;
     height: 75%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap:  .5em;
+}
+
+.numbers{
+    list-style-type: none;
+    padding: 8px 8px;
+    width: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid hotpink;
+    border-radius: 8%;
 }
