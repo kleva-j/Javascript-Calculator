@@ -44,6 +44,12 @@ Array.from(b).forEach(function(item){
     })
 })
 
+~function getTextContent(item, i){
+    if(c.textContent == ""){
+        console.log("array is empty");
+
+    }
+}();
 
 //(KEYPRESS): COMPLETE
 window.addEventListener("keypress", function(e, code){
@@ -53,11 +59,11 @@ window.addEventListener("keypress", function(e, code){
 //    console.log(code);
     if(ee){
         c.innerText += f;
-
     };
-
 });
 
+
+//clear textContent of the display-screen
 const clearConsole = document.getElementById("reset").addEventListener("click", function(){
     c.textContent = null;
 })
