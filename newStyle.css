@@ -1,4 +1,7 @@
-
+*{
+    margin: 0px;
+    padding: 0px;
+}
 .container{
     background: rgb(10, 10, 10);
     border: 1px solid rgba(218, 209, 213, 0);
@@ -40,6 +43,54 @@
     top: .75%;
 }
 
+#display{
+    height: 20%;
+    border: 1px solid green;
+    margin: 3px 2%;
+}
+
+#buttons{
+    border: 1px solid green;
+    margin: 3px 2%;
+    height: 75%;
+    box-sizing: border-box;
+}
+
+.all{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border: 1px solid grey;
+}
+
+.numbers, .keys{
+    height: 30px;
+    list-style-type: none;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid hotpink;
+    border-radius: 8%;
+}
+
+.numbers:nth-child(n-3):hover{
+    color: white;
+    background: red;
+}
+
+.numbers:nth-child(2n-3):hover{
+    color: white;
+    background: salmon;
+}
+
+.numbers:nth-child(4n-3):hover{
+    color: white;
+    background: green;
+}
+
+.keys:hover{
+    color: white;
+    background: goldenrod;
+}
+
 #switch1{
     background: black;
     border-radius: 2.5px;
@@ -63,50 +114,19 @@
 }
 
 #switch3{
-    background: rgb(0, 0, 0);
-    border: 1.5px solid white;
-    border-radius: 0 50% 50% 0;
-    height: 11px;
-    width: 11px;
+    background: inherit;
+    border-width: 10px 8px 8px;
+    border-style: solid;
+    border-color: transparent transparent transparent rgb(255, 255, 255);
     position: absolute;
     right: 8%;
     bottom: 2%;
 }
 
-#switch1:hover, #switch2:hover, #switch3:hover{
-    background: rgb(44, 43, 43);
+#switch1:hover, #switch2:hover{
+    background: rgb(250, 249, 249);
     background: white;
     cursor: pointer;
-    border: 1px solid grey
+    border: 1px solid grey;
 }
 
-
-#display{
-    height: 20%;
-    border: 1px solid green;
-    margin: 3px 2%;
-}
-
-#buttons{
-    border: 1px solid green;
-    margin: 3px 2%;
-    height: 75%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-}
-
-ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap:  .5em;
-}
-
-.numbers{
-    list-style-type: none;
-    padding: 8px 8px;
-    width: 40px;
-    text-align: center;
-    box-sizing: border-box;
-    border: 1px solid hotpink;
-    border-radius: 8%;
-}
