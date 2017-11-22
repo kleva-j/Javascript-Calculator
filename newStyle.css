@@ -1,39 +1,94 @@
 
 .container{
-    width: 26%;
-    border: 1px solid hotpink;
-    margin: 20px auto;
-    border-radius: 4px;
-    height: 560px;
+    background: rgb(10, 10, 10);
+    border: 1px solid rgba(218, 209, 213, 0);
+    border-radius: 8px;
     box-sizing: border-box;
+    height: 550px;
+    max-width: 23%;
+    margin: 20px auto;
     position: relative;
 }
 
 .wrapper{
-    width: 97%;
+    background: white;
     border: 1px solid pink;
-    height: 93%;
-    margin: 3.32% auto;
-    border-radius: 2px;
+    border-radius: 3px;
+    height: 90%;
+    margin: 5.32% auto;
 }
 
-.power-toggle{
-    background: rgb(18, 156, 18);
-    border: 2px solid green;
-    width: 6px;
-    height: 5px;
+.powerOn{
+    background: rgb(4, 194, 4);
+    border: 2.3px solid rgb(6, 179, 6);
     border-radius: 30%;
+    height: 3.5px;
+    width: 4.5px;
     position: absolute;
-    right: 10%;
-    bottom: 1.5%
+    right: 13%;
+    top: .75%;
 }
-.powerOff-toggle{
+
+.powerOff{
     background: rgb(248, 36, 36);
     border: 2px solid red;
-    width: 6px;
-    height: 5px;
     border-radius: 30%;
+    height: 3.5px;
+    width: 4.5px;
     position: absolute;
     right: 20%;
-    bottom: 1.5%
+    top: .75%;
+}
+
+#switch1{
+    background: black;
+    border-radius: 2.5px;
+    border: 1.5px solid white;
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    bottom: 2.2%;
+    right: 88%
+}
+
+#switch2{
+    background: rgb(0, 0, 0);
+    border-radius: 50%;
+    border: 1.7px solid white;
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    right: 48%;
+    bottom: 2%;
+}
+
+#switch3{
+    background: rgb(0, 0, 0);
+    border: 1.5px solid white;
+    border-radius: 0 50% 50% 0;
+    height: 11px;
+    width: 11px;
+    position: absolute;
+    right: 8%;
+    bottom: 2%;
+}
+
+#switch1:hover, #switch2:hover, #switch3:hover{
+    background: rgb(44, 43, 43);
+    background: white;
+    cursor: pointer;
+    border: 1px solid grey
+}
+
+
+#display{
+    height: 20%;
+    border: 1px solid green;
+    margin: 3px 2%;
+}
+
+#buttons{
+    border: 1px solid green;
+    margin: 3px 2%;
+    height: 75%;
 }
