@@ -58,8 +58,8 @@ window.addEventListener("keypress", function(e, code){
 
 });
 
-const get = document.getElementById("reset").addEventListener("click", function(){
-    c.innerText = "";
+const clearConsole = document.getElementById("reset").addEventListener("click", function(){
+    c.textContent = null;
 })
 
 
