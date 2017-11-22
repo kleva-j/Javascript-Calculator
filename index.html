@@ -1,67 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
     <head>
-        <title></title>
+        <title>Javascript Calculator</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="style.css" rel="stylesheet">
+        <link href="newStyle.css" rel="stylesheet">
     </head>
-
     <body>
-        <div id="container">
-
-            <div class="space">
-                <section id="display-screen">
-                </section>
-                <button class="toggle" id="On">On</button>
+        <div class="container">
+            <span class="powerOn indicator"></span>
+            <span class="powerOff indicator"></span>
+            <div class="wrapper">
+                <div id="display"></div>
+                <div id="buttons">
+                    <ul class="all nums">
+                        <li class="numbers">7</li>
+                        <li class="numbers">8</li>
+                        <li class="numbers">9</li>
+                        <li class="numbers">4</li>
+                        <li class="numbers">5</li>
+                        <li class="numbers">6</li>
+                        <li class="numbers">1</li>
+                        <li class="numbers">2</li>
+                        <li class="numbers">3</li>
+                        <li class="numbers">0</li>
+                        <li class="numbers">.</li>
+                        <li class="numbers">ans</li>
+                    </ul>
+                    <ul class="all symbs">
+                        <li class="keys" title="add">+</li>
+                        <li class="keys" title="subtract">-</li>
+                        <li class="keys" title="divide">/</li>
+                        <li class="keys" title="multiply">x</li>
+                        <li class="keys" title="open-bracket">(</li>
+                        <li class="keys" title="close-bracket">)</li>
+                        <li class="keys" title="percentage">%</li>
+                        <li class="keys" title="logarithm">log</li>
+                        <li class="keys" title="sine">sin</li>
+                        <li class="keys" title="cosine">cos</li>
+                        <li class="keys" title="tangent">tan</li>
+                        <li class="keys" title="square">x<sup>2</sup></li>
+                        <li class="keys" title="cube">x<sup>3</sup></li>
+                        <li class="keys" title="factorial">n!</li>
+                        <li class="keys" title="fibonacci">(φ)</li>
+                        <li class="keys" title="reset">reset</li>
+                        <li class="keys" title="modulus">mod</li>
+                        <li class="keys" title="Equal">=</li>
+                        <li class="keys" title="shift">shift</li>
+                        <li class="keys" title="alpha">alpha</li>
+                        <li class="keys" title="Exp">Exp</li>
+                    </ul>
+                </div>
             </div>
-            <section id="template">
-                <div id="numbers">
-                    <ul class="all specifics">
-                        <button class="numbs">1</button>
-                        <button class="numbs">2</button>
-                        <button class="numbs">3</button>
-                        <button class="numbs">4</button>
-                        <button class="numbs">5</button>
-                        <button class="numbs">6</button>
-                        <button class="numbs">7</button>
-                        <button class="numbs">8</button>
-                        <button class="numbs">9</button>
-                        <button class="numbs">0</button>
-                        <button class="numbs">.</button>
-                        <button>ans</button>
-                    </ul>
-                </div>
 
-                <div id="operators">
-                    <ul class="all non-specifics">
-                        <button class="symbols" title="minus">-</button>
-                        <button class="symbols" title="add">+</button>
-                        <button class="symbols" title="multiply">x</button>
-                        <button class="symbols" title="divide">/</button>
-                        <button class="symbols" title="modulus">mod</button>
-                        <button class="symbols" title="open-bracket">(</button>
-                        <button class="symbols" title="close-bracket">)</button>
-                        <button class="symbols" title="square">x<sup>2</sup></button>
-                        <button class="symbols" title="cube">x<sup>3</sup></button>
-                        <button class="symbols" title="fibonachi">(φ)</button>
-                        <button class="symbols" title="percentage">%</button>
-                        <button class="symbols" title="logarithm">log</button>
-                        <button class="symbols" title="sine">sin</button>
-                        <button class="symbols" title="cosine">cos</button>
-                        <button class="symbols" title="tangent">tan</button>
-                        <button class="symbols" title="factorial" id="factorial">n!</button>
-                        <button id="reset">reset</button>
-                        <button class="symbols" title="square-root">2/</button>
-                        <button class="symbols" title="cube-root">3/</button>
-                        <button class="equal">=</button>
-                    </ul>
-                </div>
-            </section>
+            <span id="switch1"></span>
+            <span id="switch2"></span>
+            <span id="switch3"></span>
         </div>
 
-        <script src="app.js"></script>
+        <script src="newApp.js"></script>
     </body>
-
-    </html>
+</html>
