@@ -47,7 +47,6 @@ Array.from(b).forEach(function(item){
 ~function getTextContent(item, i){
     if(c.textContent == ""){
         console.log("array is empty");
-
     }
 }();
 

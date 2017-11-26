@@ -8,7 +8,8 @@
     border-radius: 8px;
     box-sizing: border-box;
     height: 550px;
-    max-width: 23%;
+    min-width: 22%;
+    width: 270px;
     margin: 20px auto;
     position: relative;
 }
@@ -65,6 +66,7 @@
 .numbers, .keys{
     height: 30px;
     list-style-type: none;
+    padding: 4px 0;
     text-align: center;
     box-sizing: border-box;
     border: 1px solid hotpink;
@@ -115,7 +117,7 @@
 
 #switch3{
     background: inherit;
-    border-width: 10px 8px 8px;
+    border-width: 10px 0 8px 8px;
     border-style: solid;
     border-color: transparent transparent transparent rgb(255, 255, 255);
     position: absolute;
