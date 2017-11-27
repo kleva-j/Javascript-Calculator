@@ -63,6 +63,7 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(11, 1fr);
     border: 1px solid grey;
+    grid-gap: .2em;
 }
 
 .numbers, .keys{
@@ -71,9 +72,17 @@
     padding: 4px 0;
     text-align: center;
     box-sizing: border-box;
-    border: 1px solid hotpink;
+    border: 1px solid rgb(10, 10, 10);
     border-radius: 8%;
     cursor: pointer;
+    font-family: 'fira code';
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+.numbers:hover, .keys:hover{
+    background-color: rgba(5, 3, 3, .4);
 }
 
 .numbers:nth-child(1){
@@ -137,33 +146,187 @@
     grid-row: 11/12;
 }
 
+/* Input type Radio*/
+.numbers:nth-child(13){
+    grid-column: 1/5;
+    grid-row: 1/2;
+}
 
+.numbers:nth-child(14){
+    grid-column: 4/5;
+    grid-row: 8/9;
+}
 
+.keys[title="add"]{
+    grid-column: 5/6;
+    grid-row: 9/10;
+}
 
+.keys[title="subtract"]{
+    grid-column: 5/6;
+    grid-row: 10/11;
+}
 
+.keys[title="Equal"]{
+    grid-column: 5/7;
+    grid-row: 11/12;
+}
 
+.keys[title="multiply"]{
+    grid-column: 6/7;
+    grid-row: 9/10;
+}
 
+.keys[title="divide"]{
+    grid-column: 6/7;
+    grid-row: 10/11;
+}
 
+.keys[title="reset"]{
+    grid-column: 4/5;
+    grid-row: 11/12;
+    font-size: 13px;
+}
 
+.keys[title="PI"]{
+    grid-column: 4/5;
+    grid-row: 10/11;
+}
 
+.keys[title="Exponent"]{
+    grid-column: 4/5;
+    grid-row: 9/10;
+}
 
+.keys[title="percentage"]{
+    grid-column: 6/7;
+    grid-row: 6/7;
+}
 
+.keys[title="add-memory"]{
+    grid-column: 5/6;
+    grid-row: 8/9;
+}
 
+.keys[title="clear-memory"]{
+    grid-column: 6/7;
+    grid-row: 8/9;
+}
 
+.keys[title="open-bracket"]{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
 
+.keys[title="close-bracket"]{
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
 
+.keys[title="shift"]{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
 
+.keys[title="alpha"]{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
 
+.keys[title="logarithm"]{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
 
+.keys[title="sine"]{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
 
+.keys[title="cosine"]{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
 
+.keys[title="tangent"]{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
 
+.keys[title="sinh"]{
+    grid-column: 5/6;
+    grid-row: 4/5;
+}
 
+.keys[title="cosh"]{
+    grid-column: 6/7;
+    grid-row: 4/5;
+}
 
+.keys[title="tanh"]{
+    grid-column: 1/2;
+    grid-row: 5/6;
+}
 
+.keys[title="square"]{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
 
+.keys[title="cube"]{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
 
+.keys[title="square-root"]{
+    grid-column: 5/6;
+    grid-row: 5/6;
+}
 
+.keys[title="cube-root"]{
+    grid-column: 6/7;
+    grid-row: 5/6;
+}
+
+.keys[title="factorial"]{
+    grid-column: 5/6;
+    grid-row: 3/4;
+}
+
+.keys[title="fibonacci"]{
+    grid-column: 6/7;
+    grid-row: 3/4;
+}
+
+.keys[title="modulus"]{
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+
+.keys[title="Exp"]{
+    grid-column: 4/5;
+    grid-row: 5/6;
+}
+
+.keys[title="e"]{
+    grid-column: 5/6;
+    grid-row: 6/7;
+}
+
+.keys[title="sine-1"]{
+    grid-column: 1/2;
+    grid-row: 6/7;
+}
+
+.keys[title="cos-1"]{
+    grid-column: 2/3;
+    grid-row: 6/7;
+}
+
+.keys[title="tan-1"]{
+    grid-column: 3/4;
+    grid-row: 6/7;
+}
 
 #switch1{
     background: black;
@@ -204,3 +367,6 @@
     border: 1px solid grey;
 }
 
+input{
+    padding: 0 5px;
+}
